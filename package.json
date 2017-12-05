@@ -1,0 +1,14 @@
+{
+  "name": "tls-crash-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mockttp": "^0.4.0"
+  }
+}
