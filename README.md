@@ -24,7 +24,7 @@ curl -k --proxy-insecure -x https://localhost:8000 https://example.com
 You can start a fresh Chrome session using this proxy & trusting the cert with:
 
 ```
-google-chrome --user-data-dir=/tmp/chrome --proxy-server="https://localhost:80" --ignore-certificate-errors-spki-list=AvVrqB/anBbJ+KRCMH/anWgZbeE0Y28JtqYB0+2MDmE=
+google-chrome --user-data-dir=/tmp/chrome --proxy-server="https://localhost:8000" --ignore-certificate-errors-spki-list=AvVrqB/anBbJ+KRCMH/anWgZbeE0Y28JtqYB0+2MDmE=
 ```
 
 After a minute of heavy use the proxy will crash with SIGSEGV/SIGABRT, I think always in CRYPTO_free, and typically inside DestroySSL.
